@@ -6,13 +6,14 @@ BUILD = build
 
 # All source code files
 SRC = main.cpp\
-Include/Account.cpp\
-Include/Checkings.cpp\
-Include/Savings.cpp\
+Project/Include/Account.cpp\
+Project/Include/Checkings.cpp\
+Project/Include/Savings.cpp\
 
 # All test source files
-TEST_SRC = src/calculator_operations.c\
-test/test_calculator_operations.c
+#TEST_SRC = src/calculator_operations.c\
+#test/test_calculator_operations.c
+
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
