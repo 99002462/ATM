@@ -6,9 +6,9 @@ BUILD = build
 
 # All source code files
 SRC = main.cpp\
-Include/Account.cpp\
-Include/Checkings.cpp\
-Include/Savings.cpp\
+src/Account.cpp\
+src/Checkings.cpp\
+src/Savings.cpp\
 
 # All test source files
 #TEST_SRC = src/calculator_operations.c\
