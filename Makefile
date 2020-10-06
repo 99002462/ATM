@@ -1,5 +1,5 @@
 # Name of the project
-PROJECT_NAME = ATM-Machine
+PROJECT_NAME = ATM
 
 # Output directory
 BUILD = build
