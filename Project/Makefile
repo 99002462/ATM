@@ -1,14 +1,14 @@
 # Name of the project
-PROJECT_NAME = ATM Machine
+PROJECT_NAME = ATM-Machine
 
 # Output directory
 BUILD = build
 
 # All source code files
 SRC = main.cpp\
-Project/Include/Account.cpp\
-Project/Include/Checkings.cpp\
-Project/Include/Savings.cpp\
+Include/Account.cpp\
+Include/Checkings.cpp\
+Include/Savings.cpp\
 
 # All test source files
 #TEST_SRC = src/calculator_operations.c\
