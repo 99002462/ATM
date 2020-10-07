@@ -9,7 +9,6 @@ using namespace std;
 
 int AccountDetails[] = {
 	1234,
-	1998,
 	100,
 	600,
 };
@@ -53,7 +52,7 @@ int main()
 	Savings savObj;
 
 	int pin;
-	cout << "Welcome to Bank of Programming.\n\tPlease enter your pin number to access your account:" << endl;
+	cout << "Welcome to XYZ Bank.\nPlease enter your pin number to access your account:" << endl;
 	do
 	{
 		cin >> pin;
@@ -80,7 +79,7 @@ int main()
 					cout << "-------------------------------------------------" << endl;
 					cout << "| Which account would you like to deposit into? |" << endl;
 					cout << "-------------------------------------------------" << endl;
-					cout << "| 1. Checking                                   |" << endl;
+					cout << "| 1. Current                                   |" << endl;
 					cout << "| 2. Savings                                    |" << endl;
 					cout << "-------------------------------------------------" << endl;
 
@@ -105,7 +104,7 @@ int main()
 					cout << "-------------------------------------------------" << endl;
 					cout << "|       Which account to withdraw from?       |" << endl;
 					cout << "-------------------------------------------------" << endl;
-					cout << "| 1. Checking                                   |" << endl;
+					cout << "| 1. Current                                   |" << endl;
 					cout << "| 2. Savings                                    |" << endl;
 					cout << "-------------------------------------------------" << endl;
 
@@ -156,8 +155,8 @@ int main()
 					cout << "-------------------------------------------------" << endl;
 					cout << "| Select the type of transfer                    |" << endl;
 					cout << "-------------------------------------------------" << endl;
-					cout << "| 1. Checkings to Savings                        |" << endl;
-					cout << "| 2. Savings to Checkings                        |" << endl;
+					cout << "| 1. Current to Savings                        |" << endl;
+					cout << "| 2. Savings to Current                        |" << endl;
 					cout << "-------------------------------------------------" << endl
 						 << endl;
 
@@ -198,6 +197,7 @@ int main()
 		else
 		{
 			cout << "Invalid pin. Please enter pin number:" << endl;
+			break;
 		}
 
 	} while (!validatePin(pin));
