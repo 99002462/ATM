@@ -10,20 +10,11 @@ src/Account.cpp\
 src/Checkings.cpp\
 src/Savings.cpp\
 
-# All test source files
-TEST_SRC = src/Account.c\
-#test/test_calculator_operations.c
-
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
-
-
 
 # All include folders with header files
 INC	= -Iinc
 
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
-
-
 
 # Run the target even if the matching name exists
 .PHONY: run clean test  doc all
@@ -37,7 +28,7 @@ run:$(PROJECT_NAME)
 
 # Build and run the unit tests
 test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lcunit -lm
+	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lcunit
 	./$(TEST_OUTPUT) 
 
 
